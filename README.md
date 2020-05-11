@@ -1,5 +1,13 @@
 # bigdata-streaming
 
+# requisites
+
+- docker 19.03+
+- docker-compose 1.24 +
+- java 8+
+- node 10+
+
+# steps
 
 arrancar spark y kafka + cassandra
 ```
