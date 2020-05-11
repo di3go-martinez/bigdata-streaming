@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+
+docker-compose -f spark.yml \
+   -f kafka.yml \
+   -f cassandra.yml \
+	$@
+   
