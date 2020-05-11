@@ -1,0 +1,3 @@
+
+
+docker exec bigdata_spark_1 pkill --newest java
