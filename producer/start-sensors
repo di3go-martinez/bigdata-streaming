@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set +x 
+
+./mvnw package
+
+for i in $(seq 100);do
+  sleep 5s && java -jar target/spring-kafka-0.0.1-SNAPSHOT.jar sensor1 
+  sleep 9s && java -jar target/spring-kafka-0.0.1-SNAPSHOT.jar sensor2 
+  sleep 7s && java -jar target/spring-kafka-0.0.1-SNAPSHOT.jar sensor3 
+  sleep 5s && java -jar target/spring-kafka-0.0.1-SNAPSHOT.jar sensor4 
+done 
