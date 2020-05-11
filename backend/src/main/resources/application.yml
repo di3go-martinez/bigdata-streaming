@@ -1,0 +1,7 @@
+spring.data.cassandra:
+  keyspace-name: sensors
+  port: 9042
+  username: cassandra
+  password: cassandra
+
+server.port: 8090
