@@ -1,0 +1,5 @@
+.idea
+target
+hs_err_pid*
+stale_outputs_checked
+*.iml
