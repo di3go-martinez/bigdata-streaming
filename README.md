@@ -1,13 +1,16 @@
 # bigdata-streaming
 
-# requisites
+# Dependencias
 
 - docker 19.03+
 - docker-compose 1.24 +
 - java 8+
 - node 10+
 
-# steps
+# Pasos
+
+(Cada uno de los comandos se ejecutan desde la raíz de este proyecto)
+
 
 arrancar spark y kafka + cassandra
 ```
@@ -31,7 +34,7 @@ arrancar el backend que consume un stream consultado cassandra
 
 arrancar el frontend de ejemplo
 ```
-cd web ; npm start
+cd web ; npx npm-install-if-needed; npm start
 ```
 
 
