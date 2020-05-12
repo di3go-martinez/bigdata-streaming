@@ -4,14 +4,14 @@ set +x
 
 ./mvnw package
 
-docker cp target/*dependencies*.jar bigdata_spark_1:/tmp/app.jar
+docker cp target/*dependencies*.jar spark-master:/tmp/app.jar
 
 id=$RANDOM
 
-#trap "docker exec bigdata_spark_1 pkill --newest java" EXIT && echo "trap created"
+#trap "docker exec spark-master pkill --newest java" EXIT && echo "trap created"
 
 #executor o driver
-docker exec -t bigdata_spark_1 spark-submit --class bigdata.HubProcessor \
+docker exec -t spark-master spark-submit --class bigdata.HubProcessor \
         --conf spark.executor.extraJavaOptions="-D$id" \
         --conf spark.driver.extraJavaOptions="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=7777" /tmp/app.jar
 

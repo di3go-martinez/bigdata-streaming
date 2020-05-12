@@ -3,6 +3,7 @@ version: '2'
 services:
   spark:
     image: bitnami/spark:2
+    container_name: spark-master
     environment:
       - SPARK_MODE=master
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
