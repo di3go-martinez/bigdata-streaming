@@ -16,6 +16,8 @@ arrancar spark y kafka + cassandra
 ```
   ./dc up
 ```
+En http://localhost:8080/ se puede ver el estado de Spark
+
 
 deployar el spark job
 ```
