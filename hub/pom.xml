@@ -25,7 +25,7 @@
 
         <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
 
-        <org.apache.spark.spark-core.version>2.3.0</org.apache.spark.spark-core.version>
+        <org.apache.spark.spark-core.version>2.3.3</org.apache.spark.spark-core.version>
         <org.apache.spark.spark-sql.version>2.3.0</org.apache.spark.spark-sql.version>
         <org.apache.spark.spark-streaming.version>2.3.0</org.apache.spark.spark-streaming.version>
         <org.apache.spark.spark-mllib.version>2.3.0</org.apache.spark.spark-mllib.version>
