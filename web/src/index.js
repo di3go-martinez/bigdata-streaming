@@ -12,8 +12,9 @@ fetch('http://localhost:8090/messages').then(res => res.json())
     var offset =1;
 
     const options = {
-    /*  chart: {
-        events: {
+      chart: {
+	type: 'spline',
+      /*  events: {
             load: function () {
                 // set up the updating of the chart each second
                 var series = this.series[0];
@@ -23,8 +24,8 @@ fetch('http://localhost:8090/messages').then(res => res.json())
                     series.addPoint([x, y], true, true);
                 }, 1000);
             }
-        }
-      },*/
+        }*/
+      },
       title: {
         text: 'Sensors'
       },
