@@ -1,7 +1,7 @@
 # bigdata-streaming
 
 
-#Descripción
+# Descripción
 
 Este proyecto es una POC de cómo funcionaría un eventual sistema que monitoree sensores que van reportando un estado cada x tiempo. Los sensores reportan sus estado en ráfagas o muestras de a 10 valores, el sistema se queda con el mayor de cada muestra y lo guarda en una instancia de Cassandra. Por otro lado, hay una app que lee ese estado almacenado de los sensores y los reporta a través de una API a una web que grafica el estado de los sensores.
 
@@ -33,7 +33,7 @@ Este proyecto es una POC de cómo funcionaría un eventual sistema que monitoree
 
 # Arquitectura  
 
-![modelo](https://github.com/di3go-martinez/bigdata-streaming/tree/master/.images/arq.png "modelo")
+![_](https://raw.githubusercontent.com/di3go-martinez/bigdata-streaming/master/.images/arq.png)
 
 
 
